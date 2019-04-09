@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="egovernment">
+	<jta-data-source>java:/egovDS</jta-data-source>
+	<class>tn.esprit.domain.Admin</class>
+	<class>tn.esprit.domain.Agent</class>
+	<class>tn.esprit.domain.Bus</class>
+	<class>tn.esprit.domain.Citizen</class>
+	<class>tn.esprit.domain.HightEducationMinistry</class>
+	<class>tn.esprit.domain.InteriorMinistry</class>
+	<class>tn.esprit.domain.Man</class>
+	<class>tn.esprit.domain.Municipality</class>
+	<class>tn.esprit.domain.Poste</class>
+	<class>tn.esprit.domain.Reclamation</class>
+	<class>tn.esprit.domain.Request</class>
+	<class>tn.esprit.domain.Woman</class>
+	<class>tn.esprit.domain.transportMinistry</class>
+	
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
